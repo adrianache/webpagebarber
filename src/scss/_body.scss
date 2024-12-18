@@ -1,0 +1,28 @@
+body {
+    font-family: $font-stack;
+    background-color: white;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    ;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+#dark-mode-toggle {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #444;
+}

@@ -1,0 +1,40 @@
+footer {
+    background-color: $primary-color;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+
+    .redes-sociales {
+        margin-top: 1rem;
+
+        .icono {
+            font-size: 1.5rem;
+            color: $secondary-color;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .icono:hover {
+            color: $redlight-color;
+        }
+    }
+
+    .informacion {
+        margin-top: 1.5rem;
+    }
+
+    .enlaces {
+        margin-top: 1rem;
+
+        a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #f4f4f4;
+        }
+    }
+}

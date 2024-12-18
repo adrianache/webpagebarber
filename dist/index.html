@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Profesional</title>
+    <!-- SEO -->
+    <meta name="description"
+        content="Barbería profesional en [Ubicación]. Ofrecemos cortes de cabello, afeitados y más. Reserva tu cita ahora.">
+    <meta name="keywords" content="barbería, corte de cabello, afeitado, reserva, barbería en [Ubicación]">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Barbería Profesional">
+    <meta property="og:description"
+        content="Tu barbería de confianza para cortes de cabello, afeitados y más. ¡Reserva ya!">
+    <meta property="og:image" content="imagen_de_preview.jpg">
+    <meta property="og:url" content="https://tusitio.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Barbería Profesional">
+    <meta name="twitter:description" content="Reserva tu corte o afeitado en nuestra barbería de confianza.">
+
+    <!-- estilos y enlaces -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- pantalla de carga -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <button id="dark-mode-toggle">Modo Oscuro</button>
+
+    <header>
+        <h1>Barbería Profesional</h1>
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="galeria">
+        <h2>Galería de Servicios</h2>
+        <div class="galeria-contenedor">
+            <img src="foto1.jpg" alt="Corte de cabello" class="galeria-img">
+            <img src="foto2.jpg" alt="Afeitado" class="galeria-img">
+            <img src="foto3.jpg" alt="Corte de barba" class="galeria-img">
+        </div>
+    </section>
+
+
+    <main>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="servicio">
+                <h3 class="class=" fas fa-cut">Corte de Cabello</h3>
+                <p>Descripción del servicio de corte de cabello.</p>
+            </div>
+            <div class="servicio">
+                <h3 class="class=" fas fa-razor>Afeitado</h3>
+                <p>Descripción del servicio de afeitado.</p>
+            </div>
+        </section>
+
+        <section id="promociones">
+            <h2>Promociones Especiales</h2>
+            <div class="slider">
+                <div class="slide"><img src="promo1.jpg" alt="Promoción 1"></div>
+                <div class="slide"><img src="promo2.jpg" alt="Promoción 2"></div>
+                <div class="slide"><img src="promo3.jpg" alt="Promoción 3"></div>
+            </div>
+        </section>
+
+        <section id="reserva">
+            <h2>Reserva tu Cita</h2>
+            <form id="form-reserva">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="servicio">Servicio</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="corte">Corte de Cabello</option>
+                    <option value="afeitado">Afeitado</option>
+                    <option value="corte-afeitado">Corte y Afeitado</option>
+                </select>
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="notas">Notas (opcional)</label>
+                <textarea id="notas" name="notas"></textarea>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+
+
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+            <div class="testimonios-contenedor">
+                <div class="testimonio activo">
+                    <blockquote>"El mejor corte de mi vida. ¡Totalmente recomendado!"</blockquote>
+                    <p>- Cliente Satisfecho</p>
+                </div>
+                <div class="testimonio">
+                    <blockquote>"Un servicio increíble, el ambiente es muy acogedor."</blockquote>
+                    <p>- Cliente Feliz</p>
+                </div>
+                <div class="testimonio">
+                    <blockquote>"Volveré siempre, me hicieron sentir como en casa."</blockquote>
+                    <p>- Cliente Feliz</p>
+                </div>
+            </div>
+            <button id="prev-testimonio">Anterior</button>
+            <button id="next-testimonio">Siguiente</button>
+        </section>
+
+
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contacto-form">
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                <input type="email" id="email" placeholder="Tu email" required>
+                <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL" width="600" height="450"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Barbería Profesional</p>
+        <div class="redes-sociales">
+            <a href="#" class="icono"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icono"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icono"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="informacion">
+            <p>Dirección: Calle Ficticia 123, Ciudad</p>
+            <p>Teléfono: +123 456 7890</p>
+        </div>
+        <div class="enlaces">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

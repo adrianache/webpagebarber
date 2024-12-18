@@ -1,0 +1,38 @@
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin-top: 1rem;
+
+        li {
+            display: inline-block;
+            margin: 0 1rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s, transform 0.3s;
+
+                &:hover {
+                    color: $redlight-color;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 2rem;
+}

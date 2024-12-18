@@ -1,0 +1,329 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+#dark-mode-toggle {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #444;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  /* Light gray */
+  border-top: 4px solid #333;
+  /* Your main color */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+header nav ul li a:hover {
+  color: #eb1515;
+  transform: scale(1.1);
+}
+
+main {
+  padding: 2rem;
+}
+
+#servicios {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+#servicios .servicio {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+}
+
+#promociones {
+  padding: 2rem;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider .active {
+  display: block;
+}
+
+#reserva {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+#reserva form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#reserva input,
+#reserva select,
+#reserva textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+#reserva button {
+  padding: 0.8rem 2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#reserva button:hover {
+  background-color: #444;
+}
+
+#galeria {
+  text-align: center;
+  padding: 2rem;
+}
+
+.galeria-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.galeria-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.galeria-img:hover {
+  transform: scale(1.05);
+}
+
+#testimonios {
+  text-align: center;
+  margin-top: 2rem;
+}
+#testimonios .testimonios-contenedor {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#testimonios .testimonio {
+  display: none;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#testimonios .testimonio.activo {
+  display: block;
+}
+#testimonios button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#testimonios button:hover {
+  background-color: #444;
+}
+
+#contacto {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+}
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#contacto form input,
+#contacto form textarea {
+  padding: 0.8rem;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+#contacto form button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#contacto form button:hover {
+  background-color: #444;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+footer .redes-sociales {
+  margin-top: 1rem;
+}
+footer .redes-sociales .icono {
+  font-size: 1.5rem;
+  color: #f4f4f4;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+footer .redes-sociales .icono:hover {
+  color: #eb1515;
+}
+footer .informacion {
+  margin-top: 1.5rem;
+}
+footer .enlaces {
+  margin-top: 1rem;
+}
+footer .enlaces a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer .enlaces a:hover {
+  color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  #servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicio {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  #contacto form {
+    width: 100%;
+  }
+  .galeria-contenedor {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .slider {
+    max-width: 100%;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

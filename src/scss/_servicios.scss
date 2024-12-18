@@ -1,0 +1,19 @@
+// #servicios {
+//     padding: 2rem;
+//     background-color: $secondary-color;
+//     color: $primary-color;
+// }
+
+#servicios {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+
+    .servicio {
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        width: 30%;
+        text-align: center;
+    }
+}

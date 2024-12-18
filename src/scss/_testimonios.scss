@@ -1,0 +1,38 @@
+#testimonios {
+    text-align: center;
+    margin-top: 2rem;
+
+    .testimonios-contenedor {
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .testimonio {
+        display: none;
+        padding: 1.5rem;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonio.activo {
+        display: block;
+    }
+
+    button {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #444;
+    }
+}

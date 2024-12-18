@@ -1,0 +1,7 @@
+# Ignorar configuraciones de VSCode
+.vscode/
+
+# json
+node_modules/
+
+README.md

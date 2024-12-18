@@ -1,0 +1,14 @@
+.redes-sociales {
+    margin-top: 1rem;
+
+    .icono {
+        font-size: 1.5rem;
+        color: $secondary-color;
+        margin: 0 0.5rem;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $redlight-color;
+        }
+    }
+}
